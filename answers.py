@@ -14,7 +14,7 @@ if ans.isalpha() and len(ans)==1:
     for i in range(1, n+1):
         # Draw empty space
         for j in range(1, n-i+1):
-            # The end character should be identified by whitespace and not a newline
+            # The end character should not a newline
             print(" ", end="")
         # Draw character
         for k in range(1, 2*i):
@@ -23,7 +23,7 @@ if ans.isalpha() and len(ans)==1:
             else:
                 # Draw empty space
                 print(" ", end="")
-        # Draw empty space
+        # New line for each i loop
         print()
 
     # Draw lower side of diamond
@@ -36,6 +36,7 @@ if ans.isalpha() and len(ans)==1:
                 print(str(chr(64+i)), end="")
             else:
                 print(" ", end="")
+        # New line for each i loop
         print()
 # For invalid input
 else:
