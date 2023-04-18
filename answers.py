@@ -36,7 +36,6 @@ if ans.isalpha() and len(ans)==1:
                 print(str(chr(64+i)), end="")
             else:
                 print(" ", end="")
-                # print(" ")
         print()
 # For invalid input
 else:
